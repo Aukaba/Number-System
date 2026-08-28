@@ -1,3 +1,6 @@
+### Algorithm / Pseudocode
+
+```text
 START PROGRAM
 
   // 1. Initialization
@@ -28,7 +31,7 @@ START PROGRAM
       IF base == 2 OR base == 8 OR base == 10 OR base == 16 THEN
         BREAK WHILE LOOP
       ELSE
-        PRINT "Error: Invalid base."
+        PRINT "Error: Invalid base. Please enter 2, 8, 10, or 16."
       END IF
     END WHILE
     
@@ -66,35 +69,46 @@ START PROGRAM
 
 END PROGRAM
 
+TEST CASES
 
-Test Cases
+Test ID    : TC-01
+Description: Validate minimum input count
+Input Data : Count: 2
+Expected   : "Error: You must enter at least 3 inputs." (Prompts again)
+Status     : Pass
+----------------------------------------------------------------------
 
-TC-01 | Validate minimum input count
-Input: Count: 2
-Expected: Program outputs: "Error: You must enter at least 3 inputs." and asks again.
-Status: Pass
+Test ID    : TC-02
+Description: Validate base selection
+Input Data : Base: 5
+Expected   : "Error: Invalid base. Please enter 2, 8, 10, or 16." 
+Status     : Pass
+----------------------------------------------------------------------
 
-TC-02 | Validate base selection
-Input: Base: 5
-Expected: Program outputs: "Error: Invalid base. Please enter 2, 8, 10, or 16." and asks again.
-Status: Pass
+Test ID    : TC-03
+Description: Validate Binary input string
+Input Data : Base: 2, Num: 102
+Expected   : "Error: '102' is not a valid Base 2 number." (2 is invalid)
+Status     : Pass
+----------------------------------------------------------------------
 
-TC-03 | Validate Binary input string
-Input: Base: 2, Num: 102
-Expected: Program outputs: "Error: '102' is not a valid Base 2 number." (2 is invalid).
-Status: Pass
+Test ID    : TC-04
+Description: Validate Hex input string
+Input Data : Base: 16, Num: 1G
+Expected   : "Error: '1G' is not a valid Base 16 number." (G is invalid)
+Status     : Pass
+----------------------------------------------------------------------
 
-TC-04 | Validate Hexadecimal input string
-Input: Base: 16, Num: 1G
-Expected: Program outputs: "Error: '1G' is not a valid Base 16 number." (G is invalid).
-Status: Pass
+Test ID    : TC-05
+Description: Successful individual conversion
+Input Data : Base: 16, Num: A
+Expected   : Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A
+Status     : Pass
+----------------------------------------------------------------------
 
-TC-05 | Verify successful individual conversion
-Input: Base: 16, Num: A
-Expected: Outputs: Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A.
-Status: Pass
-
-TC-06 | Verify Final Result (Sum calculation)
-Input: Dec: 10, Bin: 1010 (10), Hex: A (10)
-Expected: Final Sum Output -> Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36.
-Status: Pass
+Test ID    : TC-06
+Description: Final Result (Sum calculation)
+Input Data : Dec: 10, Bin: 1010 (10), Hex: A (10)
+Expected   : Final Sum -> Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36
+Status     : Pass
+----------------------------------------------------------------------
