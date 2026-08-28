@@ -69,38 +69,38 @@ END PROGRAM
 
 TEST CASES
 
-Test ID     : TC-01
-Description : Validate minimum input count
-Input Data  : Count: 2
-Expected    : "Error: You must enter at least 3 inputs."
-Status      : Pass
+TC-01
+* Description: Validate minimum input count
+* Input Data: Count: 2
+* Expected: "Error: You must enter at least 3 inputs."
+* Status: Pass
 
-Test ID     : TC-02
-Description : Validate base selection
-Input Data  : Base: 5
-Expected    : "Error: Invalid base. Please enter 2, 8, 10, or 16."
-Status      : Pass
+TC-02
+* Description: Validate base selection
+* Input Data: Base: 5
+* Expected: "Error: Invalid base. Please enter 2, 8, 10, or 16."
+* Status: Pass
 
-Test ID     : TC-03
-Description : Validate Binary input string
-Input Data  : Base: 2, Num: 102
-Expected    : "Error: '102' is not a valid Base 2 number."
-Status      : Pass
+TC-03
+* Description: Validate Binary input string
+* Input Data: Base: 2, Num: 102
+* Expected: "Error: '102' is not a valid Base 2 number."
+* Status: Pass
 
-Test ID     : TC-04
-Description : Validate Hex input string
-Input Data  : Base: 16, Num: 1G
-Expected    : "Error: '1G' is not a valid Base 16 number."
-Status      : Pass
+TC-04
+* Description: Validate Hex input string
+* Input Data: Base: 16, Num: 1G
+* Expected: "Error: '1G' is not a valid Base 16 number."
+* Status: Pass
 
-Test ID     : TC-05
-Description : Successful individual conversion
-Input Data  : Base: 16, Num: A
-Expected    : Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A
-Status      : Pass
+TC-05
+* Description: Successful individual conversion
+* Input Data: Base: 16, Num: A
+* Expected: Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A
+* Status: Pass
 
-Test ID     : TC-06
-Description : Final Result (Sum calculation)
-Input Data  : Dec: 10, Bin: 1010, Hex: A
-Expected    : Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36
-Status      : Pass
+TC-06
+* Description: Final Result (Sum calculation)
+* Input Data: Dec: 10, Bin: 1010, Hex: A
+* Expected: Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36
+* Status: Pass
