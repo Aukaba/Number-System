@@ -67,46 +67,10 @@ START PROGRAM
 END PROGRAM
 
 
-TEST CASES
-
-Test ID    : TC-01
-Description: Validate minimum input count
-Input Data : Count: 2
-Expected   : "Error: You must enter at least 3 inputs." (Prompts again)
-Status     : Pass
-----------------------------------------------------------------------
-
-Test ID    : TC-02
-Description: Validate base selection
-Input Data : Base: 5
-Expected   : "Error: Invalid base. Please enter 2, 8, 10, or 16." 
-Status     : Pass
-----------------------------------------------------------------------
-
-Test ID    : TC-03
-Description: Validate Binary input string
-Input Data : Base: 2, Num: 102
-Expected   : "Error: '102' is not a valid Base 2 number." (2 is invalid)
-Status     : Pass
-----------------------------------------------------------------------
-
-Test ID    : TC-04
-Description: Validate Hex input string
-Input Data : Base: 16, Num: 1G
-Expected   : "Error: '1G' is not a valid Base 16 number." (G is invalid)
-Status     : Pass
-----------------------------------------------------------------------
-
-Test ID    : TC-05
-Description: Successful individual conversion
-Input Data : Base: 16, Num: A
-Expected   : Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A
-Status     : Pass
-----------------------------------------------------------------------
-
-Test ID    : TC-06
-Description: Final Result (Sum calculation)
-Input Data : Dec: 10, Bin: 1010 (10), Hex: A (10)
-Expected   : Final Sum -> Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36
-Status     : Pass
-----------------------------------------------------------------------
+Test ID,Description,Input Data Provided,Expected Output,Status
+TC-01,Validate minimum input count,Count: 2,"""Error: You must enter at least 3 inputs.""",✅ Pass
+TC-02,Validate base selection,Base: 5,"""Error: Invalid base. Please enter 2, 8, 10, or 16.""",✅ Pass
+TC-03,Validate Binary input string,"Base: 2, Num: 102","""Error: '102' is not a valid Base 2 number.""",✅ Pass
+TC-04,Validate Hex input string,"Base: 16, Num: 1G","""Error: '1G' is not a valid Base 16 number.""",✅ Pass
+TC-05,Successful individual conversion,"Base: 16, Num: A","Binary: 1010, Octal: 12, Decimal: 10, Hex: A",✅ Pass
+TC-06,Final Result (Sum calculation),"Dec: 10, Bin: 1010, Hex: A","Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36",✅ Pass
