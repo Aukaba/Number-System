@@ -65,3 +65,36 @@ START PROGRAM
   PRINT "Hexadecimal : " + convertToHexadecimal(total_sum)
 
 END PROGRAM
+
+
+Test Cases
+
+TC-01 | Validate minimum input count
+Input: Count: 2
+Expected: Program outputs: "Error: You must enter at least 3 inputs." and asks again.
+Status: Pass
+
+TC-02 | Validate base selection
+Input: Base: 5
+Expected: Program outputs: "Error: Invalid base. Please enter 2, 8, 10, or 16." and asks again.
+Status: Pass
+
+TC-03 | Validate Binary input string
+Input: Base: 2, Num: 102
+Expected: Program outputs: "Error: '102' is not a valid Base 2 number." (2 is invalid).
+Status: Pass
+
+TC-04 | Validate Hexadecimal input string
+Input: Base: 16, Num: 1G
+Expected: Program outputs: "Error: '1G' is not a valid Base 16 number." (G is invalid).
+Status: Pass
+
+TC-05 | Verify successful individual conversion
+Input: Base: 16, Num: A
+Expected: Outputs: Binary: 1010, Octal: 12, Decimal: 10, Hexadecimal: A.
+Status: Pass
+
+TC-06 | Verify Final Result (Sum calculation)
+Input: Dec: 10, Bin: 1010 (10), Hex: A (10)
+Expected: Final Sum Output -> Decimal: 30, Hex: 1E, Binary: 11110, Octal: 36.
+Status: Pass
