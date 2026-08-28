@@ -57,13 +57,6 @@ START PROGRAM
     
   END FOR
 
-  // 4. Calculate and display the final sum in all bases
-  PRINT "--- FINAL RESULT (SUM OF ALL INPUTS) ---"
-  PRINT "Binary      : " + convertToBinary(total_sum)
-  PRINT "Octal       : " + convertToOctal(total_sum)
-  PRINT "Decimal     : " + total_sum
-  PRINT "Hexadecimal : " + convertToHexadecimal(total_sum)
-
 END PROGRAM
 
 
