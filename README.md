@@ -1,6 +1,3 @@
-### Algorithm / Pseudocode
-
-```text
 START PROGRAM
 
   // 1. Initialization
@@ -68,6 +65,7 @@ START PROGRAM
   PRINT "Hexadecimal : " + convertToHexadecimal(total_sum)
 
 END PROGRAM
+
 
 TEST CASES
 
